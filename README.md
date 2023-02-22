@@ -1,9 +1,8 @@
 # simple_shell
 A simple UNIX command interpreter that replicates functionalities of the simple shell (sh). Additional functions are also included. This program was written entirely in C as a milestone project for ALX Africa Software Engineering.
-# Simple Shell Project
 
 **A simple Unix command line interpreter**
-![shell](/shell.png)
+![shell](/)
 
 ****
 ## Table of contents
@@ -15,15 +14,14 @@ A simple UNIX command interpreter that replicates functionalities of the simple 
  - **USAGE**
  - **Example of Usage**
  - **Bugs**
- - **TEAM**
  ****
 
 ## What is the shell?
 The shell is a program that takes commands from the keyboard via the terminal, and gives them to the operating system to perform.\
-**To better understand how the shell actually works, you can read our [Article].**
 
 ## About this project
-This project is a simple version of the linux shell made for [Holberton School] taking part of the "Low-level programming & Algorithm - Linux and Unix system programming" projects.\
+This project is a simple version of the linux shell  replica made by team sponge under the system [Alxse/Holberton School] taking part of the "Low-level programming & Algorithm - Linux and Unix system programming" projects.\
+
 It is created using the **C programming Language** and it can do many functionalities that a real shell does.
 
 ## Essential Functionalities of the Simple Shell:
@@ -38,35 +36,35 @@ It is created using the **C programming Language** and it can do many functional
 ## Files description
  - **AUTHORS** -> List of contributors to this repository
  - **man_1_simple_shell** -> Manual page for the simple_shell
- - **shell.h** -> Header file
- - **shell.c** -> main function
-	- **sig_handler** -> handles the Ctrl + C signal
-	- **_EOF** -> handles the End Of File condition
- - **string.c**
-	- **_putchar** -> prints a character
-	- **_puts** -> prints a string
-	- **_strlen** -> gives the length of a string
-	- **_strdup** -> copies a string in a newly allocated memory
-	- **concat_all** -> concatenates 3 strings in a newly allocated memory
- - **line_exec.c**
-	- **splitstring** -> splits a string into an array of words
-	- **execute** -> executes a command using execve
-	- **realloc** -> reallocates a memory block
-	- **freearv** -> frees a 2 dimensional array
- - **linkpath.c**
-	- **_getenv** -> returns the value of a global variable
-	- **add_node_end** -> adds a node in a singly linked list
-	- **linkpath** -> creates a singly linked list for PATH directories
-	- **_which** -> finds the pathname of a command
-	- **free_list** -> frees the linked list of PATH value
- - **checkbuild.c**
-	- **checkbuild** -> checks if a command is a build-in command
- - **buildin.c**
-	- **exitt** -> handles the exit buildin command
-	- **_atoi** -> converts a string into an integer
-	- **env** -> prints the current environment
-	- **_setenv** -> Initialize a new global variable, or modify an existing one
-	- **_unsetenv** -> remove a global variable
+ - **main.h** -> Header file
+ - **main.c** -> main function
+ - **aux_error1**
+ - **aux_error2**
+ - **aux_help**
+ - **aux_help2**
+ - **aux_lists**
+ - **aux_lists2**
+ - **aux_mem**
+ - **aux_stdlib**
+ - **aux_str**
+ - **aux_str2**
+ - **aux_str3**
+ - **cd_shell**
+ - **cd**
+ - **check_syntax_error**
+ - **cmd_exec**
+ - **env**
+ - **exec_line**
+ - **exit_shell**
+ - **get_builtin**
+ - **get_error**
+ - **get_help**
+ - **get_line**
+ - **get_sight**
+ - **read_line**
+ - **rep_var**
+ - **shell_loop**
+ - **split**
 
 ****
 ## List of allowed functions and system calls for this project
@@ -106,7 +104,7 @@ It is created using the **C programming Language** and it can do many functional
 You can try our shell by following these steps:
 > **Step 1:** Clone our repository using this command, (you need to have git installed on your machine first)
 ````
-git clone https://github.com/MatriMariem/simple_shell
+git clone https://github.com/Beardbreadman/simple_shell
 ````
 > **Step 2:** Change directory to simple_shell:
 ````
@@ -128,43 +126,12 @@ exit
 ````
 > **2: Press on Ctrl + D**
 
-## Example of Usage
-````
-ubunto@ubuntu:~/Bureau/simple_shell$ gcc -Wall -Wextra -Werror -pedantic *.c -o hsh
-ubunto@ubuntu:~/Bureau/simple_shell$ ./hsh
-#cisfun$ echo Hello, This is an example
-Hello, This is an example
-#cisfun$ ls
-README.md  checkbuild.c  line_exec.c  shell.c  string.c
-buildin.c  hsh		 linkpath.c   shell.h
-#cisfun$ ^C
-#cisfun$ ls -l
-total 52
--rw-r--r-- 1 ubunto ubunto  3067 Nov 26 04:22 README.md
--rw-r--r-- 1 ubunto ubunto  2183 Nov 24 16:17 buildin.c
--rw-r--r-- 1 ubunto ubunto   574 Nov 24 15:59 checkbuild.c
--rwxr-xr-x 1 ubunto ubunto 18144 Nov 26 04:22 hsh
--rw-r--r-- 1 ubunto ubunto  2091 Nov 24 14:49 line_exec.c
--rw-r--r-- 1 ubunto ubunto  1926 Nov 24 14:30 linkpath.c
--rw-r--r-- 1 ubunto ubunto   951 Nov 24 16:09 shell.c
--rw-r--r-- 1 ubunto ubunto  1351 Nov 24 15:58 shell.h
--rw-r--r-- 1 ubunto ubunto  1727 Nov 24 14:30 string.c
-#cisfun$ exit
-ubunto@ubuntu:~/Bureau/simple_shell$
-````
-## Bugs
-No known Bugs.
-
 ## TEAM
-Chokri Inès  : [LinkedIn/inès] | [GitHub/inès] | [Twitter/inès]\
-Matri Mariem : [LinkedIn/mariem] | [GitHub/mariem] | [Twitter/mariem]
+Wonderful Adebayo  : [LinkedIn/wonderful] | [GitHub/beardbreadman]\
+Fira Gemeda 
 
-[Article]: <https://www.linkedin.com/pulse/what-really-happens-when-you-type-ls-l-shell-mariem-matri/>
-[Holberton School]: <https://www.holbertonschool.com>
-[LinkedIn/inès]: <https://www.linkedin.com/in/in%C3%A8s-chokri-b247b7175>
-[LinkedIn/mariem]: <https://www.linkedin.com/in/mariem-matri-249620178>
-[GitHub/inès]: <https://github.com/CutiePizza>
-[GitHub/mariem]: <https://github.com/MatriMariem>
-[Twitter/inès]: <https://twitter.com/chokri_ines>
-[Twitter/mariem]: <https://twitter.com/MatriMariem>
+[LinkedIn/Wonderful]: <https://www.linkedin.com>
+
+[GitHub/Beardbreadman]: <https://github.com/Beardbreadman>
+
 
