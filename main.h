@@ -228,4 +228,17 @@ void aux_help_cd(void);
 /* get_help.c */
 int get_help(data_shell *datash);
 
+/* line_exec.c */
+void freearv(char **arv)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+void execute(char **argv)
+char **splitstring(char *str, const char *delim)
+
+/* linkpath.c */
+char *_getenv(const char *name)
+list_path *add_node_end(list_path **head, char *str)
+list_path *linkpath(char *path)
+char *_which(char *filename, list_path *head)
+void free_list(list_path *head)
+
 #endif
